@@ -61,6 +61,8 @@ def parse_args():
         help="Random seed for reproducibility (default: 42).",
     )
     return parser.parse_args()
+    parser.add_argument( "--test-size", type=float, default=0.20,
+    help="Fraction of data held out for testing (default: 0.20).", )
 
 
 # ---------------------------------------------------------------------------
